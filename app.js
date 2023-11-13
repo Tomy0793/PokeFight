@@ -43,7 +43,7 @@ const listadoPokedex = () => { //Funcion que crea pokedex
         div.innerHTML += `
                         <img class="imagen-pokedex imagen-pokedex-${pokemon.id} pkdx" id="imagen-pokedex" src="${pokemon.sprites.front_default}" alt="1">
                         <img class="borde-pkdx borde-pkdx-${pokemon.id}" id="atrapado${pokemon.id}" src="${borde}" alt="1">
-                        <img class="atrapado" id="atrapado-${pokemon.id}" src="img/pokebola-llena.png" alt="1">`
+                        <img class="atrapado atrapado1" id="atrapado-${pokemon.id}" src="img/pokebola-llena.png" alt="1">`
                 listadoPkdx.appendChild(div)
         })
 }
@@ -343,8 +343,8 @@ arrayPelea.map((pokemon, i) =>{
         </div>
         <h6 class="pokemon ataque-equipo">Ataque: ${pokemon.stats[1].base_stat}</h6>
         <h6 class="pokemon defensa-equipo">Defensa: ${pokemon.stats[2].base_stat}</h6>
-        <button class="btn-atacar btn btn-secondary" id="btn-atacar-${pokemon.id}">Atacar</button>
-        <button class="btn-cambiar btn btn-secondary" id="btn-cambiar">Cambiar pokemon</button>
+        <button class="botones-celulares btn-atacar btn btn-secondary" id="btn-atacar-${pokemon.id}">Atacar</button>
+        <button class="botones-celulares btn-cambiar btn btn-secondary" id="btn-cambiar">Cambiar pokemon</button>
     </div>
 </div>
 `
@@ -380,8 +380,8 @@ arrayPelea.map((pokemon, i) =>{
         </div>
         <h6 class="pokemon ataque-enemigo">Ataque: ${pokemon.stats[1].base_stat}</h6>
         <h6 class="pokemon defensa-enemigo">Defensa: ${pokemon.stats[2].base_stat}</h6>
-        <button class="btn-capturar btn btn-secondary" id="btn-capturar-${pokemon.id}">Capturar</button>
-        <button class="btn-huir btn btn-secondary" id="huir-${pokemon.id}">Huir</button>
+        <button class="botones-celulares btn-capturar btn btn-secondary" id="btn-capturar-${pokemon.id}">Capturar</button>
+        <button class="botones-celulares btn-huir btn btn-secondary" id="huir-${pokemon.id}">Huir</button>
         
     </div>  
 </div>`
